@@ -6,14 +6,10 @@ function distributeGifts(packOfGifts, reindeers) {
     0
   );
 
-  console.log("reindeersCapacity", reindeersCapacity);
-
   const giftsCapacity = packOfGifts.reduce(
     (total, value) => total + value.length,
     0
   );
-
-  console.log("giftsCapacity", giftsCapacity);
 
   return Math.floor(reindeersCapacity / giftsCapacity);
 }
