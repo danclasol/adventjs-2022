@@ -9,7 +9,7 @@ function selectSleigh(distance, sleighs) {
     (a, b) => b.consumption * distance - a.consumption * distance
   );
 
-  return sleighsSorted[0].name;
+  return sleighsSorted.length === 0 ? null : sleighsSorted[0].name;
 }
 
 const distance = 30;
