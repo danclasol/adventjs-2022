@@ -5,13 +5,9 @@ function selectSleigh(distance, sleighs) {
     (item) => distance * item.consumption <= BATERY_LIMIT
   );
 
-  console.log(sleighsFiltered);
-
   const sleighsSorted = sleighsFiltered.sort(
     (a, b) => b.consumption * distance - a.consumption * distance
   );
-
-  console.log(sleighsSorted);
 
   return sleighsSorted[0].name;
 }
